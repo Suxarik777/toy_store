@@ -18,11 +18,11 @@ public class StoreToy {
     }
 
 
-    public void saveLottery() {
-        Toys toy = getToyPrice();
+    public void generateSaveLottery() {
+        Toys toy = getToyPrice(); //записываем вес игрушки
         String text;
         text = toy.toString();
-        try(FileWriter writer = new FileWriter("Toys.txt", true))
+        try(FileWriter writer = new FileWriter("src/Toys.txt", true))
         {
             writer.write(text);
             writer.append('\n');
