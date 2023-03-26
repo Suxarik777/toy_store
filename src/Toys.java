@@ -3,7 +3,10 @@ public class Toys {
     String name;
     int successRate;
 
-    void Toy(int id, String name, int successRate) {
+
+
+
+    public Toys(int id, String name, int successRate) {
         this.id = id;
         this.name = name;
         this.successRate = successRate;
